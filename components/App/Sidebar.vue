@@ -1,6 +1,6 @@
 <template>
   <aside
-    class="transition-transform fixed inset-0 w-[80%] md:w-80 border-r left-0 top-0 bottom-0 bg-gray-100 flex flex-col z-50"
+    class="transition-transform fixed inset-0 w-[80%] md:w-80 border-r left-0 top-0 bottom-0 bg-gray-100 dark:bg-gray-900 flex flex-col z-50"
     :class="sideBarOpen ? 'translate-x-0' : '-translate-x-full md:w-0'"
   >
     <div class="h-12 px-4 border-b flex items-center justify-between">
@@ -14,6 +14,7 @@
           square
           size="xs"
           color="white"
+          @click="sideBarOpen = false"
         />
       </UTooltip>
     </div>
