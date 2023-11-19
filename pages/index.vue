@@ -37,7 +37,7 @@ import { useChat } from "ai/vue";
 
 const breakpoints = useBreakpoints(breakpointsTailwind);
 const sm = breakpoints.smallerOrEqual("md");
-const sideBarOpen = useState("sideBarOpen", () => true);
+const sideBarOpen = useState("sideBarOpen", () => false);
 
 const { messages, input, handleSubmit } = useChat({
   headers: { "Content-Type": "application/json" },
